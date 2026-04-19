@@ -1,0 +1,19 @@
+compute_environment: LOCAL_MACHINE
+distributed_type: FSDP
+num_processes: 2
+machine_rank: 0
+num_machines: 1
+mixed_precision: no
+downcast_bf16: no
+fsdp_config:
+  sharding_strategy: full_shard
+  offload_params: false
+  auto_wrap_policy: SIZE_BASED_WRAP
+  min_num_params: 1000000
+  backward_prefetch_policy: BACKWARD_PRE
+  forward_prefetch: false
+  limit_all_gathers: true
+  use_orig_params: true
+dynamo_backend: no
+use_cpu: false
+debug: false
