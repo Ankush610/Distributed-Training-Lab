@@ -1,0 +1,82 @@
+==========================================
+SLURM_CLUSTER_NAME = paramkamrupa
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = cdac
+SLURM_JOB_ID = 278509
+SLURM_JOB_NAME = cifar_accelerate_ddp
+SLURM_JOB_NODELIST = gpu[003,009]
+SLURM_JOB_USER = ankush.cdac
+SLURM_JOB_UID = 49666
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 6941
+SLURM_SUBMIT_DIR = /home/ankush.cdac/ankush/Distributed-Training-Lab/cifar-codes/02_Accelerate_DDP
+SLURM_CPUS_ON_NODE = 16
+SLURM_NTASKS = 2
+SLURM_TASK_PID = 6941
+==========================================
+====================================
+Job Name   : cifar_accelerate_ddp
+Master Addr: gpu003
+Nodes      : 2
+GPUs/Node  : 2
+Starting CIFAR-10 ResNet-50 Accelerate DDP Training
+====================================
+[*] Dynamically detected Conda at: /home/apps/miniconda/miniconda3
+[✓] Activated conda environment: tutorial
+[INFO] Num processes:    2
+[INFO] Batch per GPU:    256 | Effective batch: 512
+[INFO] Data dir:         ../../datasets/data-cifar
+[INFO] Num processes:    2
+[INFO] Batch per GPU:    256 | Effective batch: 512
+[INFO] Data dir:         ../../datasets/data-cifar
+Epoch [1] | Train Loss: 4.8503 | Acc: 11.17% | Time: 43.36s
+Epoch [1] | Train Loss: 4.5761 | Acc: 13.15% | Time: 43.38s
+Epoch [1] | Test  Loss: 2.3070 | Acc: 10.53% | Time: 1.95s
+Epoch [1] | Test  Loss: 2.2374 | Acc: 16.31% | Time: 1.97s
+Epoch [2] | Train Loss: 2.2580 | Acc: 14.74% | Time: 24.42s
+Epoch [2] | Train Loss: 2.1650 | Acc: 18.40% | Time: 24.41s
+Epoch [2] | Test  Loss: 2.2697 | Acc: 12.05% | Time: 1.93s
+Epoch [2] | Test  Loss: 2.0669 | Acc: 20.84% | Time: 1.93s
+Epoch [3] | Train Loss: 2.0305 | Acc: 22.32% | Time: 24.39s
+Epoch [3] | Train Loss: 2.0569 | Acc: 20.78% | Time: 24.41s
+Epoch [3] | Test  Loss: 1.9665 | Acc: 21.09% | Time: 1.93s
+Epoch [3] | Test  Loss: 1.9541 | Acc: 24.80% | Time: 1.93s
+Epoch [4] | Train Loss: 1.9412 | Acc: 23.31% | Time: 24.39s
+Epoch [4] | Train Loss: 1.9219 | Acc: 26.09% | Time: 24.40s
+Epoch [4] | Test  Loss: 1.9478 | Acc: 23.50% | Time: 1.94s
+Epoch [4] | Test  Loss: 1.8754 | Acc: 28.95% | Time: 1.94s
+Epoch [5] | Train Loss: 1.8867 | Acc: 26.19% | Time: 24.41s
+Epoch [5] | Train Loss: 1.8082 | Acc: 31.20% | Time: 24.40s
+Epoch [5] | Test  Loss: 1.8322 | Acc: 31.00% | Time: 1.93s
+Epoch [5] | Test  Loss: 1.7359 | Acc: 34.39% | Time: 1.94s
+Epoch [6] | Train Loss: 1.7217 | Acc: 34.64% | Time: 24.36s
+Epoch [6] | Train Loss: 1.7782 | Acc: 31.99% | Time: 24.40s
+Epoch [6] | Test  Loss: 1.6449 | Acc: 37.75% | Time: 1.94s
+Epoch [6] | Test  Loss: 1.6943 | Acc: 35.78% | Time: 1.94s
+Epoch [7] | Train Loss: 1.6495 | Acc: 37.86% | Time: 24.42s
+Epoch [7] | Train Loss: 1.6711 | Acc: 36.95% | Time: 24.40s
+Epoch [7] | Test  Loss: 1.6423 | Acc: 37.13% | Time: 1.92s
+Epoch [7] | Test  Loss: 1.6069 | Acc: 39.80% | Time: 1.94s
+Epoch [8] | Train Loss: 1.5765 | Acc: 41.08% | Time: 24.38s
+Epoch [8] | Train Loss: 1.6098 | Acc: 39.68% | Time: 24.40s
+Epoch [8] | Test  Loss: 1.5496 | Acc: 41.86% | Time: 1.91s
+Epoch [8] | Test  Loss: 1.5413 | Acc: 43.40% | Time: 1.94s
+Epoch [9] | Train Loss: 1.5423 | Acc: 41.93% | Time: 24.43s
+Epoch [9] | Train Loss: 1.5246 | Acc: 43.47% | Time: 24.42s
+Epoch [9] | Test  Loss: 1.5093 | Acc: 43.32% | Time: 1.93s
+Epoch [9] | Test  Loss: 1.4764 | Acc: 45.59% | Time: 1.94s
+Epoch [10] | Train Loss: 1.5138 | Acc: 43.37% | Time: 24.41s
+Epoch [10] | Train Loss: 1.4856 | Acc: 44.83% | Time: 24.40s
+Epoch [10] | Test  Loss: 1.4856 | Acc: 44.08% | Time: 1.93s
+
+Total time: 282.36s (4.71 min)
+Epoch [10] | Test  Loss: 1.4469 | Acc: 46.23% | Time: 1.94s
+
+Total time: 282.38s (4.71 min)
+====================================
+Training Completed
+====================================

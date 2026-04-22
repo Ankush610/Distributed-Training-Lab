@@ -1,0 +1,55 @@
+==========================================
+SLURM_CLUSTER_NAME = paramkamrupa
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = cdac
+SLURM_JOB_ID = 278822
+SLURM_JOB_NAME = cifar10_ddp
+SLURM_JOB_NODELIST = gpu[003,009]
+SLURM_JOB_USER = ankush.cdac
+SLURM_JOB_UID = 49666
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 14352
+SLURM_SUBMIT_DIR = /home/ankush.cdac/ankush/Distributed-Training-Lab/mnist-codes/01_Torch_DDP
+SLURM_CPUS_ON_NODE = 16
+SLURM_NTASKS = 2
+SLURM_TASK_PID = 14352
+==========================================
+====================================
+Job Name   : cifar10_ddp
+Master Addr: gpu003
+Nodes      : 2
+GPUs/Node  : 2
+World Size : 4
+====================================
+[*] Dynamically detected Conda at: /home/apps/miniconda/miniconda3
+[✓] Activated conda environment: tutorial
+[INFO] Using 4 GPUs
+[INFO] Global batch size: 32 | Per-GPU: 8
+NCCL version 2.14.3+cuda11.7
+Epoch [1] | Train-Loss: 0.1510 | Acc: 95.44% | Time: 33.83s
+Epoch [1] | Test Loss: 0.0570 | Accuracy: 98.16% | Time: 0.75s
+Epoch [2] | Train-Loss: 0.0873 | Acc: 97.28% | Time: 7.71s
+Epoch [2] | Test Loss: 0.0641 | Accuracy: 98.16% | Time: 0.74s
+Epoch [3] | Train-Loss: 0.0902 | Acc: 97.27% | Time: 7.65s
+Epoch [3] | Test Loss: 0.0573 | Accuracy: 98.32% | Time: 0.74s
+Epoch [4] | Train-Loss: 0.0819 | Acc: 97.43% | Time: 7.58s
+Epoch [4] | Test Loss: 0.0690 | Accuracy: 98.04% | Time: 0.74s
+Epoch [5] | Train-Loss: 0.0892 | Acc: 97.29% | Time: 7.57s
+Epoch [5] | Test Loss: 0.0793 | Accuracy: 97.48% | Time: 0.74s
+Epoch [6] | Train-Loss: 0.0769 | Acc: 97.66% | Time: 7.58s
+Epoch [6] | Test Loss: 0.0623 | Accuracy: 98.12% | Time: 0.74s
+Epoch [7] | Train-Loss: 0.0772 | Acc: 97.61% | Time: 7.57s
+Epoch [7] | Test Loss: 0.0587 | Accuracy: 98.28% | Time: 0.74s
+Epoch [8] | Train-Loss: 0.0793 | Acc: 97.71% | Time: 7.57s
+Epoch [8] | Test Loss: 0.0765 | Accuracy: 97.80% | Time: 0.74s
+Epoch [9] | Train-Loss: 0.0794 | Acc: 97.63% | Time: 7.61s
+Epoch [9] | Test Loss: 0.0736 | Accuracy: 98.20% | Time: 0.74s
+Epoch [10] | Train-Loss: 0.0831 | Acc: 97.35% | Time: 7.59s
+Epoch [10] | Test Loss: 0.0683 | Accuracy: 97.88% | Time: 0.74s
+====================================
+Training Completed
+====================================
