@@ -89,7 +89,7 @@ def main():
     parser.add_argument("--batch-size",        type=int,   default=512)
     parser.add_argument("--lr",                type=float, default=0.1)
     parser.add_argument("--num-workers",       type=int,   default=8)
-    parser.add_argument("--data-dir",          type=str,   default="../../datasets/data-cifar")
+    parser.add_argument("--data-dir",          type=str,   default="../../../datasets/data-cifar")
     parser.add_argument("--sharding-strategy", type=str,   default="FULL_SHARD",
                         choices=["FULL_SHARD", "SHARD_GRAD_OP", "NO_SHARD"],
                         help="FSDP sharding strategy")

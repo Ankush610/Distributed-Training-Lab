@@ -8,7 +8,6 @@
 #SBATCH --output=./logs/logs_%j.out
 #SBATCH --error=./logs/logs_%j.err
 #SBATCH --time=02:00:00
-#SBATCH --reservation=cdac-app
 
 export MASTER_ADDR=$(scontrol show hostnames $SLURM_JOB_NODELIST | head -n 1)
 export MASTER_PORT=29500
@@ -28,7 +27,7 @@ echo "World Size : $WORLD_SIZE"
 echo "Starting CIFAR-10 ResNet-50 FSDP Training"
 echo "===================================="
 
-source $SLURM_SUBMIT_DIR/../../setup/conda-pre-req.sh
+source $SLURM_SUBMIT_DIR/../../../setup/conda-pre-req.sh
 
 srun torchrun \
     --nnodes=$SLURM_NNODES \

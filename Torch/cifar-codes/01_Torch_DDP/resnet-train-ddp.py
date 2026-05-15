@@ -66,7 +66,7 @@ def main():
     parser.add_argument("--batch-size",  type=int,   default=512)
     parser.add_argument("--lr",          type=float, default=0.1)
     parser.add_argument("--num-workers", type=int,   default=8)
-    parser.add_argument("--data-dir",    type=str,   default="../../datasets/data-cifar")  # ← new
+    parser.add_argument("--data-dir",    type=str,   default="../../../datasets/data-cifar")  # ← new
     args = parser.parse_args()
 
     dist.init_process_group(backend="nccl")

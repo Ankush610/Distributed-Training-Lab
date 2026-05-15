@@ -1,0 +1,57 @@
+==========================================
+SLURM_CLUSTER_NAME = paramrudra
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = cdac
+SLURM_JOB_ID = 25727
+SLURM_JOB_NAME = cifar_accelerate_ddp
+SLURM_JOB_NODELIST = rdgpu01
+SLURM_JOB_USER = cdacapp01
+SLURM_JOB_UID = 55013
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 4032541
+SLURM_SUBMIT_DIR = /home/cdacapp01/ankush/Distributed-Training-Lab/Accelerate/cifar-codes/01_Accelerate_DDP
+SLURM_CPUS_ON_NODE = 16
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 4032541
+==========================================
+====================================
+Job Name   : cifar_accelerate_ddp
+Master Addr: rdgpu01
+Nodes      : 1
+GPUs/Node  : 2
+Starting CIFAR-10 ResNet-50 Accelerate DDP Training
+====================================
+[*] Dynamically detected Conda at: /home/apps/miniconda3
+[✓] Activated conda environment: tutorial
+[INFO] Num processes:    2
+[INFO] Batch per GPU:    256 | Effective batch: 512
+[INFO] Data dir:         ../../../datasets/data-cifar
+Epoch [1] | Train Loss: 4.3161 | Acc: 12.38% | Time: 14.76s
+Epoch [1] | Test  Loss: 2.2427 | Acc: 16.11% | Time: 1.06s
+Epoch [2] | Train Loss: 2.1401 | Acc: 19.56% | Time: 11.87s
+Epoch [2] | Test  Loss: 2.0709 | Acc: 21.93% | Time: 1.01s
+Epoch [3] | Train Loss: 1.9675 | Acc: 22.48% | Time: 11.84s
+Epoch [3] | Test  Loss: 1.9641 | Acc: 22.89% | Time: 1.01s
+Epoch [4] | Train Loss: 1.8665 | Acc: 27.67% | Time: 11.87s
+Epoch [4] | Test  Loss: 1.8103 | Acc: 30.51% | Time: 1.01s
+Epoch [5] | Train Loss: 1.7760 | Acc: 32.69% | Time: 11.81s
+Epoch [5] | Test  Loss: 1.7632 | Acc: 33.32% | Time: 1.03s
+Epoch [6] | Train Loss: 1.6928 | Acc: 35.94% | Time: 11.87s
+Epoch [6] | Test  Loss: 1.6348 | Acc: 39.26% | Time: 1.02s
+Epoch [7] | Train Loss: 1.6226 | Acc: 39.08% | Time: 11.87s
+Epoch [7] | Test  Loss: 1.6277 | Acc: 38.98% | Time: 1.01s
+Epoch [8] | Train Loss: 1.5547 | Acc: 41.71% | Time: 11.85s
+Epoch [8] | Test  Loss: 1.4999 | Acc: 43.91% | Time: 1.03s
+Epoch [9] | Train Loss: 1.4854 | Acc: 44.45% | Time: 11.84s
+Epoch [9] | Test  Loss: 1.4487 | Acc: 45.92% | Time: 1.01s
+Epoch [10] | Train Loss: 1.4451 | Acc: 46.47% | Time: 11.86s
+Epoch [10] | Test  Loss: 1.4327 | Acc: 46.41% | Time: 1.03s
+
+Total time: 131.66s (2.19 min)
+====================================
+Training Completed
+====================================

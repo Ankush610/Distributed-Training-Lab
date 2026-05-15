@@ -1,0 +1,65 @@
+==========================================
+SLURM_CLUSTER_NAME = paramrudra
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = cdac
+SLURM_JOB_ID = 25668
+SLURM_JOB_NAME = cifar10_ddp
+SLURM_JOB_NODELIST = rdgpu01
+SLURM_JOB_USER = cdacapp01
+SLURM_JOB_UID = 55013
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3941725
+SLURM_SUBMIT_DIR = /home/cdacapp01/ankush/Distributed-Training-Lab/Torch/cifar-codes/01_Torch_DDP
+SLURM_CPUS_ON_NODE = 16
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 3941725
+==========================================
+====================================
+Job Name   : cifar10_ddp
+Master Addr: rdgpu01
+Nodes      : 1
+GPUs/Node  : 2
+World Size : 2
+====================================
+[*] Dynamically detected Conda at: /home/apps/miniconda3
+[✓] Activated conda environment: tutorial
+[INFO] Nodes: 1 | GPUs/node: 2 | World size: 2
+[INFO] Batch per GPU: 256 | Effective batch: 512
+NCCL version 2.14.3+cuda11.7
+
+rdgpu01:3941772:3941800 [1] graph/search.cc:885 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+
+rdgpu01:3941772:3941800 [1] graph/search.cc:885 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+
+rdgpu01:3941771:3941799 [0] graph/search.cc:885 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+
+rdgpu01:3941771:3941799 [0] graph/search.cc:885 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+Epoch [1] | Train Loss: 4.6046 | Acc: 12.36% | Time: 14.35s
+Epoch [1] | Test  Loss: 2.1931 | Acc: 18.02% | Time: 1.68s
+Epoch [2] | Train Loss: 2.1355 | Acc: 19.38% | Time: 11.76s
+Epoch [2] | Test  Loss: 2.0623 | Acc: 20.36% | Time: 1.65s
+Epoch [3] | Train Loss: 2.0263 | Acc: 23.00% | Time: 11.72s
+Epoch [3] | Test  Loss: 2.0103 | Acc: 23.27% | Time: 1.60s
+Epoch [4] | Train Loss: 1.9176 | Acc: 27.13% | Time: 11.77s
+Epoch [4] | Test  Loss: 1.9045 | Acc: 29.39% | Time: 1.60s
+Epoch [5] | Train Loss: 1.8309 | Acc: 31.47% | Time: 11.73s
+Epoch [5] | Test  Loss: 1.7508 | Acc: 35.22% | Time: 1.63s
+Epoch [6] | Train Loss: 1.7503 | Acc: 34.90% | Time: 11.74s
+Epoch [6] | Test  Loss: 1.6805 | Acc: 38.62% | Time: 1.65s
+Epoch [7] | Train Loss: 1.6774 | Acc: 37.53% | Time: 11.79s
+Epoch [7] | Test  Loss: 1.5892 | Acc: 40.44% | Time: 1.58s
+Epoch [8] | Train Loss: 1.6151 | Acc: 39.79% | Time: 11.79s
+Epoch [8] | Test  Loss: 1.5454 | Acc: 42.48% | Time: 1.65s
+Epoch [9] | Train Loss: 1.5641 | Acc: 42.08% | Time: 11.73s
+Epoch [9] | Test  Loss: 1.5003 | Acc: 44.69% | Time: 1.60s
+Epoch [10] | Train Loss: 1.5267 | Acc: 43.69% | Time: 11.77s
+Epoch [10] | Test  Loss: 1.4824 | Acc: 45.12% | Time: 1.64s
+
+Total time: 136.42s (2.27 min)
+====================================
+Training Completed
+====================================

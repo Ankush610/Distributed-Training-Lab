@@ -1,0 +1,30 @@
+==========================================
+SLURM_CLUSTER_NAME = paramrudra
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = cdac
+SLURM_JOB_ID = 25550
+SLURM_JOB_NAME = cifar10_ddp
+SLURM_JOB_NODELIST = rdgpu[01-02]
+SLURM_JOB_USER = cdacapp01
+SLURM_JOB_UID = 55013
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3854713
+SLURM_SUBMIT_DIR = /home/cdacapp01/ankush/Distributed-Training-Lab/Torch/mnist-codes/01_Torch_DDP
+SLURM_CPUS_ON_NODE = 16
+SLURM_NTASKS = 2
+SLURM_TASK_PID = 3854713
+==========================================
+====================================
+Job Name   : cifar10_ddp
+Master Addr: rdgpu01
+Nodes      : 2
+GPUs/Node  : 2
+World Size : 4
+====================================
+====================================
+Training Completed
+====================================

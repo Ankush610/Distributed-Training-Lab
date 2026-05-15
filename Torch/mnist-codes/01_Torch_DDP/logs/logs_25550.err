@@ -1,0 +1,5 @@
+/var/share/slurm/d/job25550/slurm_script: line 29: /home/cdacapp01/ankush/Distributed-Training-Lab/Torch/mnist-codes/01_Torch_DDP/../../setup/conda-pre-req.sh: No such file or directory
+slurmstepd: error: execve(): torchrun: No such file or directory
+srun: error: rdgpu01: task 0: Exited with exit code 2
+slurmstepd: error: execve(): torchrun: No such file or directory
+srun: error: rdgpu02: task 1: Exited with exit code 2

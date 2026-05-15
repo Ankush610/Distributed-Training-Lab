@@ -8,7 +8,6 @@
 #SBATCH --output=./logs/logs_%j.out
 #SBATCH --error=./logs/logs_%j.err
 #SBATCH --time=02:00:00
-#SBATCH --reservation=cdac-app
 
 export MASTER_ADDR=$(scontrol show hostnames $SLURM_JOB_NODELIST | head -n 1)
 export MASTER_PORT=29500

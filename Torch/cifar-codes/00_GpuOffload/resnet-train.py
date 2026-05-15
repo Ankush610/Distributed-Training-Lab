@@ -61,11 +61,11 @@ def main():
     parser.add_argument("--batch-size",  type=int,   default=512)
     parser.add_argument("--lr",          type=float, default=0.1)
     parser.add_argument("--num-workers", type=int,   default=8)
-    parser.add_argument("--data-dir",    type=str,   default="../../datasets/data-cifar")  # ← new
+    parser.add_argument("--data-dir",    type=str,   default="../../../datasets/data-cifar")  # ← new
     args = parser.parse_args()
 
 
-    device = torch.device(f"cuda")
+    device = torch.device(f"cuda") 
 
     train_tf = transforms.Compose([
         transforms.RandomCrop(32, padding=4),

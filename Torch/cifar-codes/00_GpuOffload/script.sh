@@ -8,7 +8,6 @@
 #SBATCH --output=./logs/logs_%j.out
 #SBATCH --error=./logs/logs_%j.err
 #SBATCH --time=02:00:00
-#SBATCH --reservation=cdac-app
 
 echo "===================================="
 echo "Job Name   : $SLURM_JOB_NAME"
@@ -18,7 +17,7 @@ echo "GPUs/Node  : 1"
 echo "Starting Single-GPU Training"
 echo "===================================="
 
-source $SLURM_SUBMIT_DIR/../../setup/conda-pre-req.sh
+source $SLURM_SUBMIT_DIR/../../../setup/conda-pre-req.sh
 
 echo "SLURM_SUBMIT_DIR=$SLURM_SUBMIT_DIR"
 
